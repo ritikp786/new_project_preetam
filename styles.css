@@ -1,4 +1,6 @@
-@media screen  and (min-width:320) and (max-width:480px) and (orientation : portrait){
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:wght@100..900&display=swap');
+
+@media screen  and (min-width:320px) and (max-width:480px) {
     html {
         box-sizing: border-box;
       }
@@ -8,37 +10,152 @@
         padding: 0;
       }
 
-
-}
-
-@media screen  and (width:1440px) and (orientation : portrait){
-    html {
-        box-sizing: border-box;
-      }
-      *, *:before, *:after {
-        box-sizing: inherit;
-        margin: 0;
-        padding: 0;
-      }
-
-    
-}
-
-@media screen  and (min-width:1440px) and (orientation : portrait){
-    html {
-        box-sizing: border-box;
-      }
-      *, *:before, *:after {
-        box-sizing: inherit;
-        margin: 0;
-        padding: 0;
+      .wrapper{
+        width: 100vw;
+        height: 236.063rem;
+        margin: 0 0 40.063rem;
+        padding: 0 0 0.438rem;
+        object-fit: contain;
+        background-image: url("./assets/group-6.png");
       }
 
       .top-banner{
         width: 100vw;
         height: 3.2407vh;
+        padding: 0.313rem 4.875rem 0.188rem 2.125rem;
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        font-family: "Heebo", sans-serif;
         background-color: #128b57;
       } 
+
+      .top-banner a:link{
+        text-decoration: none;
+        font-family: "Heebo", sans-serif;
+        /* font-weight: bold; */
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1.5px;
+
+      }
+      
+      #book-ticket-now::before{
+        content: "BOOK TICKETS NOW" ;
+        text-decoration: none;
+        color: #fff;
+      }
+
+      #learn-more::before{
+        content: "LEARN MORE" ;
+        text-decoration: underline;
+        color: #fff;
+      }
+
+      .footer{
+        width: 100vw;
+        height: 40.5rem;
+        margin: 235.625rem 0 0;
+        padding: 2.563rem 0 2.313rem;
+        background-color: #063514;
+      }
+
+}
+
+@media screen  and (width:1440px) {
+    html {
+        box-sizing: border-box;
+      }
+      *, *:before, *:after {
+        box-sizing: inherit;
+        margin: 0;
+        padding: 0;
+      }
+
+      .wrapper{
+        width: 100vw;
+        height: 214.625rem;
+        margin: 0 0 43.75rem;
+        padding: 0 0 1.063rem;
+        object-fit: contain;
+        background-image: url("./assets/group-6.png");
+      }
+
+      .top-banner{
+        width: 100vw;
+        height: 3.2407vh;
+        padding: 0 330px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Heebo", sans-serif;
+        background-color: #128b57;
+      } 
+
+      #top-banner-left__text--modified a::before{
+        content: "BOOK TICKETS NOW" ;
+        color: #fff;
+      }
+
+      .footer{
+        width: 100vw;
+        height: 44.813rem;
+        margin: 213.563rem 0 0;
+        padding: 5.063rem 3.25rem 4.375rem 1.5rem;
+        background-color: #063514;
+      }
+
+    
+}
+
+@media screen  and (min-width:1440px){
+    html {
+        box-sizing: border-box;
+      }
+      *, *:before, *:after {
+        box-sizing: inherit;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .wrapper{
+        width: 100vw;
+        height: 213.563rem;
+        object-fit: contain;
+        background-image: url("./assets/group-6.png");
+
+      }
+
+      .top-banner{
+        width: 100vw;
+        height: 3.2407vh;
+        padding: 0 330px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Heebo", sans-serif;
+        background-color: #128b57;
+      } 
+
+      .top-banner a:link{
+        text-decoration: none;
+        outline: none;
+        border: none;
+        color: #fff;
+        
+      }
+      
+      #book-ticket-now::before{
+        content: "BOOK TICKETS NOW" ;
+        color: #fff;
+      }
+
+      .top-banner-right{
+        width:30%;
+        display: flex;
+        justify-content: space-around;
+      }
 
       .hero{
         width: 100vw;
@@ -47,11 +164,58 @@
         /* padding: 229px 888px 182px 540px; */
         opacity: 0.9;
         background-color: #111;
+        position: absolute;
       }
-
+      
       .hero img{
         width: 100%;
         height: 100%;
+        position: absolute;
+      }
+      
+      .hero-top{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0 541px;
+        position: relative;
+        color: #fff;
+      }
+      
+      .hero-top__elements{
+        border-bottom: 1px dashed white;
+        color: #fff;
+      }
+      
+      .hero-bottom{
+        width: 100%;
+        height: 80%;
+        padding:  0 541px;
+        position: relative;
+        color: #fff;
+        font-size: 16px;
+      }
+      .Lorem-Epsum-Dolo{
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1.5px;
+      }
+
+      .squamish-valley{
+        text-transform: uppercase;
+      }
+
+      .footer{
+        width: 100vw;
+        height: 44.813rem;
+        background-color: #063514;
+        margin: 213.563rem 0 0;
+        padding: 0 20.625rem;
       }
 }
 
